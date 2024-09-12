@@ -13,7 +13,7 @@ function Header({navLinks}) {
 
   return (
     <header>
-      <nav className='container grid navbar'>
+      <nav className='containerr grid navbar'>
         <HashLink className= "navbar-logo" to = '/'>
           <img src={Logo} alt="Little Lemon" />
         </HashLink>

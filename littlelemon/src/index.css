@@ -97,10 +97,22 @@ img {
     max-width: 61.75rem;
     width: 90%;
     margin: 0 auto;
-}   
+}
 
 .grid {
     display: grid;
 }
 
+.button-primary{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: #f4ce14;
+    color: #495e57;
+    font-weight: 700;
+    border: 2px solid #f4ce14;
+}
 
+.button-primary:hover, .button-primary:focus {
+    background-color: #495e57;
+    color: white;
+}
