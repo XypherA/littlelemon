@@ -1,0 +1,80 @@
+.aboutus {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 8rem 0 4rem;
+}
+
+.aboutus-description {
+    grid-column: 1;
+}
+
+.aboutus-description p {
+    padding-top: 1.5rem;
+}
+
+.aboutus-img {
+    grid-column: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 25.5rem;
+    margin: auto 0;
+}
+
+.aboutus-img img {
+    position: absolute;
+    width: 23rem;
+    height: 15.5rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: 78% 50%;
+}
+
+.aboutus-img img:nth-of-type(1) {
+    top: 0;
+    right: 0;
+}
+
+.aboutus-img img:nth-of-type(2) {
+    left: 0;
+    bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .aboutus {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .aboutus-img {
+        grid-column: 1;
+        grid-row: 2;
+        position: static;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: unset;
+    }
+
+    .aboutus-img img {
+        position: static;
+        max-width: 50%;
+        height: 26rem;
+        width: unset;
+    }
+
+}
+
+@media (max-width:500px) {
+    .aboutus{
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .aboutus-img {
+        flex-direction: column;
+    }
+
+    .aboutus-img img {
+        max-width: 100%;
+    }
+}
