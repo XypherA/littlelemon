@@ -1,0 +1,55 @@
+.footer {
+    background-color: #495e57;
+    color: white;
+    padding: 2.5rem 6%;
+    height: 18rem;
+    display: grid;
+    gap: 2rem;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, minmax(6rem, max-content));
+}
+
+.footer-logo{
+    width: 6rem;
+}
+
+.footer h4{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover, .footer a:focus {
+    color: #f4ce14;
+}
+
+.footer-nav ul{
+    list-style-type: none;
+}
+
+.footer-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact svg {
+    margin-right: 0.5rem;
+}
+
+.footer-contact p {
+    margin-bottom: 0.25rem;
+}
+
+.footer-social svg {
+    margin-right: 1rem;
+}
+
+@media (max-width:800px){
+    .footer {
+        height: 29rem;
+        grid-template-columns: repeat(2, minmax(6rem, max-content));
+    }
+}
